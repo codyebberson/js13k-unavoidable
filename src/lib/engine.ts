@@ -131,7 +131,6 @@ function render(now: number): void {
     }
   }
 
-  // CODY
   // Set one light above the player
   lightPositions[0] = player.pos[0] + 2 * Math.sin(player.yaw);
   lightPositions[0] = player.pos[0];

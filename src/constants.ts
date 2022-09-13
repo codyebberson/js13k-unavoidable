@@ -6,7 +6,7 @@ export const ACCELERATION = 500.0;
 /**
  * Player friction.
  */
-export const FRICTION = 17.0;
+export const FRICTION = 22;
 
 /**
  * Gravitational force (meters per second per second).

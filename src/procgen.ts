@@ -15,7 +15,7 @@ export function generateLevel(): void {
   // createPlatform(240, 272, 4, 0, 32);
   fillVoxels(238, 274, 0, 4, 0, 36, 0.8);
   fillVoxels(240, 272, 2, 4, 2, 34, -1);
-  setVec3(player.pos, 256, 10, 18);
+  setVec3(player.pos, 256, 4, 18);
   entities.push(new Checkpoint(256, 3, 18, 0));
 
   // Bridge to main world

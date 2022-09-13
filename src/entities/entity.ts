@@ -149,8 +149,8 @@ export class GameEntity {
    */
   update(): void {
     if (!this.isDashing()) {
-      this.velocity[0] *= 1.0 - dt * FRICTION;
-      this.velocity[2] *= 1.0 - dt * FRICTION;
+      this.velocity[0] *= 1.0 / (1.0 + dt * FRICTION);
+      this.velocity[2] *= 1.0 / (1.0 + dt * FRICTION);
     }
 
     this.pos[0] += dt * this.velocity[0];
