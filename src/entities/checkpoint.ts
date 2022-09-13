@@ -12,6 +12,10 @@ export class Checkpoint extends GameEntity {
     this.objective = objective;
   }
 
+  update(): void {
+    // Do nothing - especially do not apply gravity
+  }
+
   render(): void {
     const rotation = gameTime * 2;
     for (let i = 0; i < 8; i++) {
