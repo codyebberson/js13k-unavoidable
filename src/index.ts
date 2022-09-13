@@ -579,14 +579,14 @@ function updateWorld(): void {
     lookAt(
       camera,
       fromValuesVec3(
-        player.pos[0] + shake * Math.random(),
-        player.pos[1] + shake * Math.random() + 2,
-        player.pos[2] + shake * Math.random()
+        camera.source[0] + 36 + shake * Math.random(),
+        camera.source[1] - 72 + shake * Math.random() + 2,
+        camera.source[2] + 36 + shake * Math.random()
       ),
       Math.PI / 4
     );
   } else {
-    lookAt(camera, fromValuesVec3(player.pos[0], player.pos[1] + 4, player.pos[2]), Math.PI / 4);
+    lookAt(camera, fromValuesVec3(camera.source[0] + 36, camera.source[1] - 72, camera.source[2] + 36), Math.PI / 4);
   }
 
   copyVec3(lightSource.source, fromValuesVec3(100, 500, -25));
