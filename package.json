@@ -1,0 +1,39 @@
+{
+  "name": "js13k-2022",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "shadermin": "node --loader ts-node/esm src/shadermin.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "8.4.0",
+    "@types/clean-css": "4.2.5",
+    "@types/html-minifier-terser": "7.0.0",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "clean-css": "5.3.1",
+    "ect-bin": "1.4.1",
+    "eslint": "8.23.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "google-closure-compiler": "20220601.0.0",
+    "html-minifier-terser": "7.0.0",
+    "prettier": "2.7.1",
+    "roadroller": "2.1.0",
+    "rollup": "2.79.0",
+    "terser": "5.15.0",
+    "ts-node": "10.9.1",
+    "tslib": "2.4.0",
+    "typescript": "4.8.2",
+    "vite": "3.0.9"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true
+  }
+}
